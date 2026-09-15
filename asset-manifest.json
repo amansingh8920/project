@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/project.git/static/css/main.84f0e8b6.css",
-    "main.js": "/project.git/static/js/main.58b1e0a5.js",
-    "static/js/453.e0840517.chunk.js": "/project.git/static/js/453.e0840517.chunk.js",
-    "static/media/darbar.jpg": "/project.git/static/media/darbar.0feb5abf7860dbc52cd6.jpg",
-    "static/media/hazur.jpg": "/project.git/static/media/hazur.b51bf05e8ffe4230052d.jpg",
-    "static/media/logo.png": "/project.git/static/media/logo.322d6bf1488277251ea2.png",
-    "static/media/damdama.jpg": "/project.git/static/media/damdama.a32a09e39ab053df5cb1.jpg",
-    "static/media/kesgarh.jpg": "/project.git/static/media/kesgarh.5d55ff022411cda54b03.jpg",
-    "static/media/patna.jpg": "/project.git/static/media/patna.6f2b09043de64a06f95a.jpg",
-    "static/media/akal.jpeg": "/project.git/static/media/akal.dc67180d8e15c09ff34f.jpeg",
-    "static/media/instagram.png": "/project.git/static/media/instagram.75e0546a6b5abe4c0506.png",
-    "static/media/facebook.png": "/project.git/static/media/facebook.49e67d43221b6bb1aa86.png",
-    "static/media/sgpcbanner.png": "/project.git/static/media/sgpcbanner.22e83da0794940aaa5bf.png",
-    "index.html": "/project.git/index.html",
-    "main.84f0e8b6.css.map": "/project.git/static/css/main.84f0e8b6.css.map",
-    "main.58b1e0a5.js.map": "/project.git/static/js/main.58b1e0a5.js.map",
-    "453.e0840517.chunk.js.map": "/project.git/static/js/453.e0840517.chunk.js.map"
+    "main.css": "/project/static/css/main.84f0e8b6.css",
+    "main.js": "/project/static/js/main.8f8b140c.js",
+    "static/js/453.e0840517.chunk.js": "/project/static/js/453.e0840517.chunk.js",
+    "static/media/darbar.jpg": "/project/static/media/darbar.0feb5abf7860dbc52cd6.jpg",
+    "static/media/hazur.jpg": "/project/static/media/hazur.b51bf05e8ffe4230052d.jpg",
+    "static/media/logo.png": "/project/static/media/logo.322d6bf1488277251ea2.png",
+    "static/media/damdama.jpg": "/project/static/media/damdama.a32a09e39ab053df5cb1.jpg",
+    "static/media/kesgarh.jpg": "/project/static/media/kesgarh.5d55ff022411cda54b03.jpg",
+    "static/media/patna.jpg": "/project/static/media/patna.6f2b09043de64a06f95a.jpg",
+    "static/media/akal.jpeg": "/project/static/media/akal.dc67180d8e15c09ff34f.jpeg",
+    "static/media/instagram.png": "/project/static/media/instagram.75e0546a6b5abe4c0506.png",
+    "static/media/facebook.png": "/project/static/media/facebook.49e67d43221b6bb1aa86.png",
+    "static/media/sgpcbanner.png": "/project/static/media/sgpcbanner.22e83da0794940aaa5bf.png",
+    "index.html": "/project/index.html",
+    "main.84f0e8b6.css.map": "/project/static/css/main.84f0e8b6.css.map",
+    "main.8f8b140c.js.map": "/project/static/js/main.8f8b140c.js.map",
+    "453.e0840517.chunk.js.map": "/project/static/js/453.e0840517.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84f0e8b6.css",
-    "static/js/main.58b1e0a5.js"
+    "static/js/main.8f8b140c.js"
   ]
 }
