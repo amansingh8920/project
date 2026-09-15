@@ -23,7 +23,7 @@ nav {
 }
 
 .nav-item:hover {
-    transform: scale(1.);
+    transform: scale(0.9);
 }
 
 main {
@@ -205,11 +205,12 @@ body{
 .newsection {
     height: 200px;
     width: 99%;
-    border: 1px solid rgb(130, 130, 133);
+    border: 2px solid rgb(130, 130, 133);
     margin-left: 5px;
     margin-bottom: 5px;
     display: flex;
     background-color: aliceblue;
+    border-radius: 6px;
 }
 
 #s1 {
@@ -231,12 +232,13 @@ body{
 
 #s2 {
     height: 98%;
-    width: 98%;
+    width: 99%;
     margin: 4px;
     display: grid;
     grid-template-columns: 50px 50px 50px 50px 50px;
     grid-template-rows: 50px 50px 50px 50px 50px;
-    gap: 160px;
+    gap: 165px;
+   
 }
 
 #s2 div {
