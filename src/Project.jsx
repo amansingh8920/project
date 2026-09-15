@@ -1,17 +1,17 @@
 
 import { useState } from 'react';
 import './App.css'
-import sgpcImage from './sgpc.jpg'
-import logo from './logo.png'
-import darbar from './darbar.jpg'
-import akaltakht from './akal.jpeg'
-import kesgarh from './kesgarh.jpg'
-import patna from './patna.jpg'
-import hazur from './hazur.jpg'
-import damdama from './damdama.jpg'
-import youtube from './youtube.png'
-import instagram from './instagram.png'
-import facebook from './facebook.png'
+import sgpcImage from '../public/sgpc.jpg'
+import logo from '../public/logo.png'
+import darbar from '../public/darbar.jpg'
+import akaltakht from '../public/akal.jpeg'
+import kesgarh from '../public/kesgarh.jpg'
+import patna from '../public/patna.jpg'
+import hazur from '../public/hazur.jpg'
+import damdama from '../public/damdama.jpg'
+import youtube from '../public/youtube.png'
+import instagram from '../public/instagram.png'
+import facebook from '../public/facebook.png'
 
 export default function Navbar(){
 
