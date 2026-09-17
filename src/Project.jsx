@@ -17,7 +17,7 @@ export default function Navbar(){
 
    
     const takht = ['ਸ੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ ਸਾਹਿਬ, ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਾਹਿਬ, ਪੰਜਾਬ ','ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਜੀ ਪਟਨਾ ਸਾਹਿਬ, ਬਿਹਾਰ ', 'ਸ੍ਰੀ ਕੇਸਗੜ ਸਾਹਿਬ, ਸ੍ਰੀ ਅਨੰਦਪੁਰ ਸਾਹਿਬ, ਪੰਜਾਬ ',' ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ, ਸਾਬੋ ਕੀ ਤਲਵੰਡੀ, ਬਠਿੰਡਾ, ਪੰਜਾਬ ','ਸ੍ਰੀ ਅਬਿਚਲ ਨਗਰ ਹਜੂਰ ਸਾਹਿਬ ਨਾਂਦੇੜ, ਮਹਾਰਾਸ਼ਟਰ' ];
-    
+    const pic = ['./image/akal.jpeg','./image/patna,jpg','./image/kesgarh.jpg','./image/damdama.jpg','./image/hazur.jpg'];
     const [hide,setHide] = useState(true);    
     const handle=()=>{ 
         if(hide){
@@ -55,9 +55,14 @@ export default function Navbar(){
                 </section>
                 <div className='innerdiv'>
                     <ul id='takht'>
-                     5 Takht
+
+                     <h4>ਪੰਜ ਤਖ਼ਤ</h4>
                      { takht.map((t,key)=>{
-                        return <li key={key}>{t}</li>
+                        return <div>
+                            <li key={key}> {t} 
+                            </li>
+                        <li><img src={pic[key]} alt="" /></li>
+                        </div>
                      })}
                     </ul>
                 </div>
@@ -68,12 +73,14 @@ export default function Navbar(){
 
         <div className='newsection'>
             <div id='s1'>
-                <h2>5 Sarovar</h2>
-                <div>Santoksar Sahib</div>
-                <div>Ramsar Sahib</div>
-                <div>Bibeksar Sahib</div>
-                <div>Kaulsar Sahib</div>
-                <div>Amritsar Sahib</div>
+                <h3>5 ਸਰੋਵਰ</h3>
+               
+             <div>ਸੰਤੋਖਸਰ ਸਰੋਵਰ</div>
+             <div>ਰਾਮਸਰ ਸਰੋਵਰ</div>
+             <div>ਬਿਬੇਕਸਰ ਸਰੋਵਰ</div>
+             <div>ਕੌਲਸਰ ਸਰੋਵਰ </div>
+            <div>ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਰੋਵਰ</div>
+        
             </div>
             <div id='s2'>
                 <div id="item1" className='takhtpic'> <img src={akaltakht} alt='akal takht' id='akal'/> </div>
