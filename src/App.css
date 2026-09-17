@@ -230,11 +230,11 @@ body {
     line-height: 160%;
     padding: 5px;
     margin-left: 10px;
+    color: rgba(2, 22, 51, 0.952);
 }
 
 #s1 div:hover {
-    background-color: black;
-    color: white;
+    
     transition: transform 1s ease;
     transform: translateX(15px);
 
@@ -356,7 +356,7 @@ footer h5 {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:500px) {
     #darbar {
         height: 100%;
         width: 100%;
@@ -375,9 +375,11 @@ footer h5 {
     }
 
     #takht {
-        animation: movesmall 20s linear infinite;
+        animation: 2s linear ;
         color: rgb(21, 21, 56);
-        line-height: 15px;
+        line-height: 12px;
+        font-size: 90%;
+        text-align: center;
     }
 
     .inner-div {
@@ -389,17 +391,24 @@ footer h5 {
     .darbarimg {
         z-index: 4;
         overflow: hidden;
-        height: 80%;
-        width: 80%;
-        margin-left: 10%;
+        height: 90%;
+        width: 90%;
+        margin-left: 5%;
     }
 
     #menu {
-        right: 8vw;
+        right: 2%;
+    }
+
+    #info {
+        font-size: 85%;
     }
 
     #s1 {
         justify-self: center;
+        text-align: center;
+        width: 50%;
+        font-size: 120%;
     }
 
     #s2 {
@@ -409,7 +418,10 @@ footer h5 {
         justify-self: center;
         margin-left: 50%;
     }
-
+    
+    #s2 div {
+        width: 180px;
+    }
     .newsection {
         gap: 60px;
         position: relative;
@@ -419,6 +431,7 @@ footer h5 {
     .maindiv {
         line-height: 40px;
         overflow-y: hidden;
+        overflow-x:hidden;
     }
 
 }
