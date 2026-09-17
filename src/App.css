@@ -147,9 +147,10 @@ li {
 }
 
 #takht {
-    animation: move 10s linear infinite;
+    animation: move 20s linear infinite;
     color: rgb(21, 21, 56);
-    font-size: 110%;
+    font-size: 120%;
+    line-height: 180%;
 }
 
 @keyframes move {
@@ -166,18 +167,20 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 1em;
-    animation: moving 10s linear infinite;
+    animation: moving 30s linear infinite;
     color: red;
-    display:inline-block;
+    display: inline-block;
 }
 
 @keyframes moving {
     0% {
-        transform: translateX(100%);
+        transform: translateX(300%);
+        color: blue;
     }
 
     100% {
         transform: translateX(-100%);
+        color: red;
     }
 }
 
@@ -234,9 +237,9 @@ body {
 }
 
 #s1 div:hover {
-    
+
     transition: transform 1s ease;
-    transform: translateX(15px);
+    transform: translateX(20px);
 
 }
 
@@ -346,15 +349,6 @@ footer h5 {
     height: 28px;
 }
 
-@keyframes movesmall {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 @media (max-width:500px) {
     #darbar {
@@ -375,21 +369,21 @@ footer h5 {
     }
 
     #takht {
-        animation: 2s linear ;
+        z-index: -1;
         color: rgb(21, 21, 56);
-        line-height: 12px;
-        font-size: 90%;
+        line-height: 25px;
+        font-size: 95%;
         text-align: center;
+        animation: none;
     }
 
     .inner-div {
         position: relative;
-        overflow: hidden;
-
+        overflow-y: hidden;
     }
 
     .darbarimg {
-        z-index: 4;
+        z-index: 1;
         overflow: hidden;
         height: 90%;
         width: 90%;
@@ -401,14 +395,15 @@ footer h5 {
     }
 
     #info {
-        font-size: 85%;
+        font-size: 70%;
     }
 
     #s1 {
         justify-self: center;
         text-align: center;
         width: 50%;
-        font-size: 120%;
+        font-size: 100%;
+        font-weight: 800;
     }
 
     #s2 {
@@ -418,10 +413,11 @@ footer h5 {
         justify-self: center;
         margin-left: 50%;
     }
-    
+
     #s2 div {
         width: 180px;
     }
+
     .newsection {
         gap: 60px;
         position: relative;
@@ -431,7 +427,7 @@ footer h5 {
     .maindiv {
         line-height: 40px;
         overflow-y: hidden;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
 }
