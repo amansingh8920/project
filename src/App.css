@@ -149,8 +149,8 @@ li {
 #takht {
     animation: move 20s linear infinite;
     color: rgb(21, 21, 56);
-    font-size: 120%;
-    line-height: 180%;
+    font-size: 100%;
+    line-height: 120%;
 }
 
 @keyframes move {
@@ -167,14 +167,14 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 1em;
-    animation: moving 30s linear infinite;
+    animation: moving 20s linear infinite;
     color: red;
     display: inline-block;
 }
 
 @keyframes moving {
     0% {
-        transform: translateX(300%);
+        transform: translateX(130%);
         color: blue;
     }
 
@@ -249,7 +249,7 @@ body {
     margin: 4px;
     display: flex;
     justify-content: start;
-    padding: 5px;
+    padding: 2px;
     gap: 10px;
 }
 
@@ -258,6 +258,13 @@ body {
     width: 150px;
     border: 2px solid rgb(176, 177, 179);
     margin: 10px;
+}
+
+.takhtname{
+    font-weight: 900;
+    font-size: 90%;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .takhtpic:hover {
@@ -363,23 +370,29 @@ footer h5 {
         width: 97vw;
     }
 
-    .maindiv {
-        flex-wrap: wrap;
-
+    main{
+     max-width: 100%;  
+     
     }
 
     #takht {
-        z-index: -1;
+        width: 100%;
         color: rgb(21, 21, 56);
         line-height: 25px;
-        font-size: 95%;
-        text-align: center;
+        font-size: 15px;
         animation: none;
+        text-align: center;   
+        overflow-wrap: break-word;
+        margin-right : 10px;
     }
 
     .inner-div {
-        position: relative;
-        overflow-y: hidden;
+        width: 50px; 
+        overflow-y: wrap;
+        overflow-x:wrap;
+        overflow-wrap: break-word;
+        min-width: 0;
+        margin-right: 20px;
     }
 
     .darbarimg {
@@ -395,7 +408,8 @@ footer h5 {
     }
 
     #info {
-        font-size: 70%;
+        font-size: 75%;
+        display: inline-block
     }
 
     #s1 {
@@ -416,6 +430,7 @@ footer h5 {
 
     #s2 div {
         width: 180px;
+        margin-bottom: 30px ;
     }
 
     .newsection {
@@ -425,9 +440,28 @@ footer h5 {
     }
 
     .maindiv {
-        line-height: 40px;
-        overflow-y: hidden;
-        overflow-x: hidden;
+        line-height: 20px;
+        width:100%;
+        flex-wrap: wrap;
     }
 
+    .takhtname {
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+     
+    
+    #hukamnama p {
+        overflow-wrap: break-word;
+        width: 220px;
+    }
+
+    #hukamnama {
+        margin-right: 10px;
+    }
+
+    #takht h4 {
+        text-align: center;
+        float: left
+    }
 }

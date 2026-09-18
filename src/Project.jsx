@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css'
 import sgpcImage from './image/sgpcbanner.png'
 import logo from './image/logo.png'
@@ -12,15 +12,35 @@ import damdama from './image/damdama.jpg'
 import youtube from './image/youtube.png'
 import instagram from './image/instagram.png'
 import facebook from './image/facebook.png'
+import Hukamnama from './Hukamnama.jsx'
 
 export default function Navbar() {
 
-
-    const takht = ['ਸ੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ ਸਾਹਿਬ, ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਾਹਿਬ, ਪੰਜਾਬ ', 'ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਜੀ ਪਟਨਾ ਸਾਹਿਬ, ਬਿਹਾਰ ', 'ਸ੍ਰੀ ਕੇਸਗੜ ਸਾਹਿਬ, ਸ੍ਰੀ ਅਨੰਦਪੁਰ ਸਾਹਿਬ, ਪੰਜਾਬ ', ' ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ, ਸਾਬੋ ਕੀ ਤਲਵੰਡੀ, ਬਠਿੰਡਾ, ਪੰਜਾਬ ', 'ਸ੍ਰੀ ਅਬਿਚਲ ਨਗਰ ਹਜੂਰ ਸਾਹਿਬ ਨਾਂਦੇੜ, ਮਹਾਰਾਸ਼ਟਰ'];
-    const sarovar = ['ਸੰਤੋਖਸਰ ਸਰੋਵਰ','ਰਾਮਸਰ ਸਰੋਵਰ','ਬਿਬੇਕਸਰ ਸਰੋਵਰ','ਕੌਲਸਰ ਸਰੋਵਰ','ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਰੋਵਰ'];
-
+    const sarovar = ['ਸੰਤੋਖਸਰ ਸਰੋਵਰ', 'ਰਾਮਸਰ ਸਰੋਵਰ', 'ਬਿਬੇਕਸਰ ਸਰੋਵਰ', 'ਕੌਲਸਰ ਸਰੋਵਰ', 'ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਰੋਵਰ'];
+    const data = [
+        {
+            name: "ਸ੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ ਸਾਹਿਬ, ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਾਹਿਬ, ਪੰਜਾਬ ",
+            imagesrc: akaltakht
+        },
+        {
+            name: "ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਜੀ ਪਟਨਾ ਸਾਹਿਬ, ਬਿਹਾਰ ",
+            imagesrc: patna
+        },
+        {
+            name: "ਸ੍ਰੀ ਕੇਸਗੜ ਸਾਹਿਬ, ਸ੍ਰੀ ਅਨੰਦਪੁਰ ਸਾਹਿਬ, ਪੰਜਾਬ ",
+            imagesrc: kesgarh
+        },
+        {
+            name: "ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ, ਸਾਬੋ ਕੀ ਤਲਵੰਡੀ, ਬਠਿੰਡਾ, ਪੰਜਾਬ ",
+            imagesrc: damdama
+        },
+        {
+            name: "ਸ੍ਰੀ ਅਬਿਚਲ ਨਗਰ ਹਜੂਰ ਸਾਹਿਬ ਨਾਂਦੇੜ, ਮਹਾਰਾਸ਼ਟਰ",
+            imagesrc: hazur
+        }
+    ]
     const [hide, setHide] = useState(true);
-    
+
     const handle = () => {
         if (hide) {
             document.getElementById('lis').style.display = "block";
@@ -31,10 +51,11 @@ export default function Navbar() {
         }
     }
 
+
     return <div>
         <nav>
             <div className="nav-item"><img src={sgpcImage} alt="sgpc logo" id="sgpc" /></div>
-            <div className="nav-item">SGPC ਸ੍ਰੀ ਅਮ੍ਰਿਤਸਰ ਸਾਹਿਬ</div>
+            <div className="nav-item">SGPC ਸ੍ਰੀ ਅਮ੍ਰਿਤਸਰ </div>
             <div className="nav-item" id="menu" onClick={handle}>Menu</div>
         </nav>
 
@@ -59,35 +80,32 @@ export default function Navbar() {
                 </section>
                 <div className='innerdiv'>
                     <ul id='takht'>
-
-                        <h4>ਪੰਜ ਤਖ਼ਤ</h4>
-                        {takht.map((t, key) => {
-                            return <div>
-                                <li key={key}>{t}</li>
-                            </div>
-                        })}
+                        <Hukamnama />
                     </ul>
                 </div>
 
             </div>
-            <p id='info'> For online sarai booking please visit https://sgpcsaraibooking.net</p>
+            <p id='info'> ਡਿਠੇ ਸਭੇ ਥਾਵ ਨਹੀ ਤੁਧੁ ਜੇਹਿਆ ॥ ਬਧੋਹੁ ਪੁਰਖਿ ਬਿਧਾਤੈ ਤਾਂ ਤੂ ਸੋਹਿਆ ॥ ਵਸਦੀ ਸਘਨ ਅਪਾਰ ਅਨੂਪ ਰਾਮਦਾਸਪੁਰ ॥ ਹਰਿਹਾਂ ਨਾਨਕ ਕਸਮਲ ਜਾਹਿ ਨਾਇਐ ਰਾਮਦਾਸ ਸਰ ॥੧੦॥</p>
         </main>
 
         <div className='newsection'>
             <div id='s1'>
                 <h3>5 ਸਰੋਵਰ</h3>
-             
-                {sarovar.map((item,key)=>{
-                    return <div><li key={key}>{item}</li></div> 
+
+                {sarovar.map((item, key) => {
+                    return <div><li key={key}>{item}</li></div>
                 })}
             </div>
 
             <div id='s2'>
-                <div id="item1" className='takhtpic'> <img src={akaltakht} alt='akal takht' id='akal' /> </div>
-                <div id="item2" className='takhtpic'><img src={patna} alt="patna sahib" /></div>
-                <div id='item3' className='takhtpic'><img src={kesgarh} alt="kesgarh sahib" /></div>
-                <div id="item4" className='takhtpic'><img src={damdama} alt="damdama sahib" /></div>
-                <div id="item5" className='takhtpic'><img src={hazur} alt="hazur sahib" /></div>
+
+
+                {data.map((t, key) => {
+                    return <div id={'item' + (key + 1)}>
+                        <img src={t.imagesrc} alt="takht" className='takhtpic' />
+                        <li key={key} className='takhtname'>{t.name}</li>
+                    </div>
+                })}
             </div>
         </div>
 
