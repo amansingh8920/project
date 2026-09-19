@@ -1,0 +1,42 @@
+import akaltakht from './image/akal.jpeg'
+import kesgarh from './image/kesgarh.jpg'
+import patna from './image/patna.jpg'
+import hazur from './image/hazur.jpg'
+import damdama from './image/damdama.jpg'
+
+export default function Takht() {
+
+
+    const data = [
+        {
+            name: "ਸ੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ ਸਾਹਿਬ, ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਾਹਿਬ, ਪੰਜਾਬ ",
+            imagesrc: akaltakht
+        },
+        {
+            name: "ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਜੀ ਪਟਨਾ ਸਾਹਿਬ, ਬਿਹਾਰ ",
+            imagesrc: patna
+        },
+        {
+            name: "ਸ੍ਰੀ ਕੇਸਗੜ ਸਾਹਿਬ, ਸ੍ਰੀ ਅਨੰਦਪੁਰ ਸਾਹਿਬ, ਪੰਜਾਬ ",
+            imagesrc: kesgarh
+        },
+        {
+            name: "ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ, ਸਾਬੋ ਕੀ ਤਲਵੰਡੀ, ਬਠਿੰਡਾ, ਪੰਜਾਬ ",
+            imagesrc: damdama
+        },
+        {
+            name: "ਸ੍ਰੀ ਅਬਿਚਲ ਨਗਰ ਹਜੂਰ ਸਾਹਿਬ ਨਾਂਦੇੜ, ਮਹਾਰਾਸ਼ਟਰ",
+            imagesrc: hazur
+        }
+    ]
+
+    return <div id='takhtdiv'>
+      
+        {data.map((t, key) => {
+            return <div className='takhtitem'>
+                <img src={t.imagesrc} alt="takht" className='takhtpic' />
+                <li key={key} className='takhtname'>{t.name}</li>
+            </div>
+        })}
+    </div>
+}

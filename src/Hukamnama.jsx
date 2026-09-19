@@ -18,6 +18,7 @@ function Hukamnama(){
 
         const fetchData = await response.json();
         setData(fetchData);
+
       } catch (err) {
         setError(err.message);
          } finally {
@@ -27,16 +28,16 @@ function Hukamnama(){
 
     fetchHukamnama();
   }, []); 
+  
 
   if (loading) return <div>Loading...</div>
   if(error)  return <div>Error</div>
 
   const element =[]
 
-  for (let i = 0; i < data.hukamnamainfo.count-28; i++) {
+  for (let i = 0; i < 5; i++) {
          element.push(
-            <p key={i}>{data.hukamnama[i].line.gurmukhi.unicode}<br/>
-            {data.hukamnama[i].line.translation.english.default}
+            <p key={i}>{data.hukamnama[i].line.gurmukhi.unicode}          
             </p>
          )
   }
