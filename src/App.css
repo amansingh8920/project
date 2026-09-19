@@ -1,6 +1,5 @@
 nav {
     display: flex;
-    background-color: cornflowerblue;
     padding: 5px;
     justify-content: flex-start;
     gap: 5px;
@@ -27,7 +26,9 @@ nav {
 
 li {
     list-style-type: none;
+   
 }
+
 
 #sgpc {
     height: 32px;
@@ -65,19 +66,21 @@ li {
 
 .lis-item {
     margin-top: 5px;
-
+    text-decoration: none;
     padding: 5px;
-    color: rgb(249, 250, 252);
+    color: rgb(220, 226, 236);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 15px;
     width: 200px;
     margin-bottom: 2px;
     border-bottom: 1px solid white;
+    text-decoration: none;
 }
 
 .lis-item:hover {
-    background-color: rgb(6, 71, 133);
+    background-color: rgb(226, 230, 235);
+    color: black;
 }
 
 
