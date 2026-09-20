@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/project/static/css/main.2b587a17.css",
+    "main.css": "/project/static/css/main.09488e4f.css",
     "main.js": "/project/static/js/main.beeb9411.js",
     "static/js/453.e0840517.chunk.js": "/project/static/js/453.e0840517.chunk.js",
     "static/media/darbar.jpg": "/project/static/media/darbar.0feb5abf7860dbc52cd6.jpg",
@@ -19,12 +19,12 @@
     "static/media/facebook.png": "/project/static/media/facebook.49e67d43221b6bb1aa86.png",
     "static/media/sgpcbanner.png": "/project/static/media/sgpcbanner.22e83da0794940aaa5bf.png",
     "index.html": "/project/index.html",
-    "main.2b587a17.css.map": "/project/static/css/main.2b587a17.css.map",
+    "main.09488e4f.css.map": "/project/static/css/main.09488e4f.css.map",
     "main.beeb9411.js.map": "/project/static/js/main.beeb9411.js.map",
     "453.e0840517.chunk.js.map": "/project/static/js/453.e0840517.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b587a17.css",
+    "static/css/main.09488e4f.css",
     "static/js/main.beeb9411.js"
   ]
 }
