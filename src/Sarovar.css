@@ -70,14 +70,20 @@
         height: 150px;
     }
 
-    .sitem img {
-        height: 120px;
-        width: 120px;
+    .imagewrapper img  {
+        height: 200px;
+        width: 200px;
 
     }
 
-    .sitem btn {
-        
+    .btn {
+        height: 100px;
+        width: 100px;
+    }
+
+    .btn img {
+        height: 100%;
+        width: 100%;
     }
 
     #sarovar div {

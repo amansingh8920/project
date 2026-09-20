@@ -203,6 +203,7 @@ main {
         position: relative;
         display: flex;
         width: 120%;
+        
     }
 
     #live {
@@ -213,5 +214,6 @@ main {
 
     #live audio {
         width: 80%;
+
     }
 }
