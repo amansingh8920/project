@@ -6,6 +6,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Hukamnamapage from './Hukamnamapage.jsx';
 import Sarovar from './Sarovar.jsx'
 import Takht from './Takht.jsx';
+import './Nav.css'
 
 export default function Nav() {
 
@@ -20,8 +21,6 @@ export default function Nav() {
             document.getElementById('lis').style.display = "none";
         }
     }
-
-
 
     return <div>
 

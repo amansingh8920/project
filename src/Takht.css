@@ -1,0 +1,73 @@
+#takhtdiv {
+    height: 30%;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    margin-left: 15%;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.takhtitem{
+    width: 100px;
+    height: 200px;
+}
+
+#takhtdiv div {
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+
+.takhtpic {
+    height: 250px;
+    width: 300px;
+    border: 2px solid rgb(8, 8, 214)
+}
+.takhtpic:hover {
+    transform: scale(0.9);
+    transition: all 1s ease ;
+}
+
+.takhtname {
+    font-weight: 900;
+    font-size: 100%;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (max-width:500px){
+
+    #takhtdiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        line-height: 15px;
+        justify-self: center;
+        margin-left: 10%;
+
+    }
+
+    #takhtdiv div {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 50%;
+        font-size: 85%;
+    }
+
+
+
+    .takhtpic {
+        margin-top: 50px;
+    }
+
+    .takhtname {
+        font-weight: 500;
+        font-size: 100%;
+        margin: 10px;
+    }
+
+}

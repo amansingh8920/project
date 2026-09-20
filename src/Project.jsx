@@ -1,7 +1,6 @@
-import './App.css'
+import './Project.css'
 import logo from './image/logo.png'
 import darbar from './image/darbar.jpg'
-
 import Hukamnama from './Hukamnama.jsx'
 
 

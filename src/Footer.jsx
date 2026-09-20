@@ -1,6 +1,8 @@
 import youtube from './image/youtube.png'
 import instagram from './image/instagram.png'
 import facebook from './image/facebook.png'
+import './Footer.css'
+
 export default function Footer(){
     return <div className='footerdiv'>
             <footer>

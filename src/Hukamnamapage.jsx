@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import './HukamPage.css'
 export default function Hukamnamapage(){
       const [data, setData] = useState(null);
       const [loading, setLoading] = useState(true);

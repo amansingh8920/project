@@ -1,0 +1,12 @@
+@media (max-width:500px) {
+
+    #hukamnama p {
+        overflow-wrap: break-word;
+        width: 220px;
+    }
+
+    #hukamnama {
+        margin-right: 10px;
+    }
+
+}
