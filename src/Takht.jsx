@@ -4,9 +4,11 @@ import patna from './image/patna.jpg'
 import hazur from './image/hazur.jpg'
 import damdama from './image/damdama.jpg'
 import './Takht.css'
+import { useState } from 'react'
+import righticon from './image/right-arrow.png'
 
 export default function Takht() {
-
+     const [index, setIndex]= useState(0);
 
     const data = [
         {
@@ -31,13 +33,26 @@ export default function Takht() {
         }
     ]
 
+     const right = () => {
+
+    if (index === data.length - 1) {
+      let x = 0;
+      setIndex(x);
+    } else {
+      let x;
+      x = index + 1;
+      setIndex(x);
+    }
+
+  }
+
     return <div id='takhtdiv'>
-      
-        {data.map((t, key) => {
-            return <div className='takhtitem'>
-                <img src={t.imagesrc} alt="takht" className='takhtpic' />
-                <li key={key} className='takhtname'>{t.name}</li>
+             <h3>5 ਤਖ਼ਤ</h3>
+             <div className='takhtitem'>
+                <img src={data[index].imagesrc} alt="takht" className='takhtpic' />
+                <li key={index} className='takhtname'>{data[index].name}</li>
+                <button onClick={right} className='btn'><img src={righticon} alt="right" /></button>
             </div>
-        })}
+            
     </div>
 }

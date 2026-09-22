@@ -5,7 +5,6 @@ import kaulsar from './image/kaulsar.jpeg'
 import amritsar from './image/amritsar.jpg'
 import './Sarovar.css'
 import { useState } from 'react'
-import lefticon from './image/left-arrow.png'
 import righticon from './image/right-arrow.png'
 
 export default function Sarovar() {
@@ -20,17 +19,7 @@ export default function Sarovar() {
     { name: 'ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਰੋਵਰ', imagesrc: amritsar }
   ];
 
-  const left = () => {
-    if (index === 0) {
-      let x;
-      x = sarovar.length - 1;
-      setIndex(x);
-    } else {
-      let x;
-      x = index - 1;
-      setIndex(x);
-    }
-  }
+
   const right = () => {
 
     if (index === sarovar.length - 1) {
@@ -46,13 +35,12 @@ export default function Sarovar() {
   return <div>
     <h3 id="shead"> 5 ਸਰੋਵਰ</h3>
     <div id='sarovar'>
-      <div className='sitem'>
-        <button onClick={left} className='btn'><img src={lefticon} alt="" /></button>
+      <div className='sitem'> 
         <div className='imagewrapper'>
           <img src={sarovar[index].imagesrc} alt="sarovar" />
         <li key={index}>{sarovar[index].name}</li>
-        </div>
         <button onClick={right} className='btn'><img src={righticon} alt="" /></button>
+        </div>  
       </div>
 
     </div>
