@@ -156,13 +156,15 @@ main {
         line-height: 20px;
         width: 100%;
         flex-wrap: wrap;
+        box-shadow:none;
     }
 
     #hukam {
         width: 100%;
         color: rgb(21, 21, 56);
         line-height: 20px;
-        font-size: 15px;
+        font-size: 17px;
+        font-weight: 800;
         animation: none;
         text-align: center;
         overflow-wrap: break-word;
@@ -174,7 +176,7 @@ main {
         overflow-y: wrap;
         overflow-x: wrap;
         overflow-wrap: break-word;
-        min-width: 0;
+        
         margin-right: 20px;
     }
 
@@ -196,18 +198,18 @@ main {
 
 
     #info {
-        font-size: 75%;
+        font-size: 85%;
         white-space: nowrap;
     }
 
 
     .livesection {
-        gap: 60px;
+        gap: 20px;
         position: relative;
         display: flex;
         width: 180%;
         justify-self: center;
-        
+        margin-bottom:2px;
     }
 
     #live {
