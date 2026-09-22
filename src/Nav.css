@@ -10,6 +10,7 @@ nav {
     background-image: linear-gradient(to right, rgb(58, 123, 207), rgb(83, 83, 134));
     perspective: 500px;
     z-index: 1;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
 }
 
 .nav-item {
@@ -52,16 +53,18 @@ li {
     margin-right: 10px;
     height: 100px;
     width: auto;
-    position: absolute;
+    position: fixed;
     border: 1px solid rgb(95, 80, 80);
     text-align: center;
     padding: 1px;
     border-radius: 10px;
     margin-top: 5px;
-    background-image: linear-gradient(to right, rgb(93, 169, 219), rgb(60, 60, 102));
+    background-color: white;
     overflow-y: scroll;
     scrollbar-width: none;
     z-index: 2;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: rgba(3, 46, 94, 0.9)
 }
 
 .lis-item {
@@ -74,12 +77,15 @@ li {
     font-size: 15px;
     width: 200px;
     margin-bottom: 2px;
-    border-bottom: 1px solid white;
     text-decoration: none;
 }
 
+.link {
+    color:white;
+}
+
 .lis-item:hover {
-    background-color: rgb(226, 230, 235);
+    background-color: rgba(21, 113, 226,0.5);
     color: black;
 }
 
@@ -87,8 +93,15 @@ li {
 @media (max-width:500px){
       nav {
         height: 8vw;
-        width: 97vw;
+        width: 97vw;    
         
+    
+    }
+
+    #lis {
+        position: absolute;
+        top: 50px;
+        float: right;
     }
 
     #menu {

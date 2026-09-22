@@ -37,13 +37,15 @@ function Hukamnama(){
 
   for (let i = 0; i < 5; i++) {
          element.push(
-            <p key={i}>{data.hukamnama[i].line.gurmukhi.unicode}          
+            <p key={i}>{data.hukamnama[i].line.gurmukhi.unicode}       
             </p>
          )
   }
     
 return <div id="hukamnama">
    {element}
+
+  {data.date.nanakshahi.punjabi.date} {data.date.nanakshahi.punjabi.month} {data.date.nanakshahi.punjabi.year}
 
   </div>
 }

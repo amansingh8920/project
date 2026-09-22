@@ -79,12 +79,11 @@ h3 {
         flex-direction: column;
         line-height: 5px;
         justify-self: center;
-        margin-bottom: 5px;
-        height: 200px;
-        width: 200px;
+        height: 550px;
+        width: 550px;
         justify-content: center;
-        align-items: center;
-        margin-top: 250px;
+        
+        margin-top: 150px;
        }
 
     .takhtitem {

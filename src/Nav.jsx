@@ -19,6 +19,7 @@ export default function Nav() {
         } else {
             setHide(true);
             document.getElementById('lis').style.display = "none";
+            
         }
     }
 
@@ -27,7 +28,7 @@ export default function Nav() {
         <nav>
             <div className="nav-item"><img src={sgpcImage} alt="sgpc logo" id="sgpc"/></div>
             <div className="nav-item">SGPC ਸ੍ਰੀ ਅਮ੍ਰਿਤਸਰ </div>
-            <div className="nav-item" id="menu" onClick={handle}>Menu</div>
+            <div className="nav-item" id="menu" onClick={handle} on>Menu</div>
         </nav>
 
 
@@ -35,10 +36,10 @@ export default function Nav() {
 
             <HashRouter>
                 <ul id="lis">
-                    <li className="lis-item" ><Link to="/">Home</Link></li>
-                    <li className='lis-item' ><Link to="/takht">Takht</Link></li>
-                    <li className='lis-item' ><Link to="/sarovar">Sarovar</Link></li>
-                    <li className="lis-item" ><Link to="/hukamnama">Hukamnama</Link></li>
+                    <li className="lis-item" ><Link to="/" className='link'>Home</Link></li>
+                    <li className='lis-item' ><Link to="/takht" className='link'>Takht</Link></li>
+                    <li className='lis-item' ><Link to="/sarovar" className='link'>Sarovar</Link></li>
+                    <li className="lis-item" ><Link to="/hukamnama" className='link'>Hukamnama</Link></li>
 
                 </ul>
                 <Routes>

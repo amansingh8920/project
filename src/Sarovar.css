@@ -58,7 +58,14 @@
 
 @media (max-width:500px) {
 
+    #sarovar {
+        display: flex;
+        justify-content: center;
+       margin-top: 20%;
+    }
+
     .sitem {
+        
         justify-self: center;
         text-align: center;
         width: 50%;
@@ -68,8 +75,8 @@
     }
 
     .imagewrapper img  {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 300px;
 
     }
 
@@ -85,6 +92,6 @@
 
     #sarovar div {
         height: 190px;
-
+ 
     }
 }
